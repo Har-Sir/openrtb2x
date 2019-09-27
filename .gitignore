@@ -3,6 +3,9 @@
 *.prefs
 *.project
 *.classpath
+*.iml
+.idea
+log
 demand-side/dsp-client/target/*
 demand-side/dsp-intf/target/*
 demand-side/dsp-core/target/*
