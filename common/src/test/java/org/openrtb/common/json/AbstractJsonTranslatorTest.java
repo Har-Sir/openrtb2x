@@ -31,10 +31,6 @@
  */
 package org.openrtb.common.json;
 
-import static org.junit.Assert.assertEquals;
-
-import java.io.IOException;
-
 import org.codehaus.jackson.annotate.JsonCreator;
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.codehaus.jackson.annotate.JsonPropertyOrder;
@@ -42,6 +38,10 @@ import org.codehaus.jackson.map.annotate.JsonSerialize;
 import org.codehaus.jackson.map.annotate.JsonSerialize.Inclusion;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.io.IOException;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Verifies the {@link AbstractJsonTranslator} behaves as expected.

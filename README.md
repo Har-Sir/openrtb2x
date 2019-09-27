@@ -114,3 +114,11 @@ OpenRTB versions 1.0, 2.0, 2.1, 2.2, 2.3, 2.4 and 2.5 are fully supported.
 This project provides a simple API that can be used to validate
 Native JSON bid requests and responses according to specifications.
 Native version 1.0 is fully supported.
+
+
+
+
+
+从openrtb合并fork的代码
+
+![1569552545350](C:\Users\ShenT\AppData\Local\Temp\1569552545350.png)
