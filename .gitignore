@@ -1,4 +1,7 @@
 *.DS_Store
+# Eclipse/STS files #
+.settings/
+bin/
 *.class
 *.prefs
 *.project
@@ -18,6 +21,37 @@ supply-side/ssp-web/target/*
 
 common/target/*
 
-
+*/target/
 
 /bin
+*.springBeans
+
+# Maven build folders
+target/
+
+#Ignore Idea generated files
+*.iws
+workspace.xml
+tasks.xml
+
+.idea
+.vscode
+*.iml
+.settings
+.project
+target
+.classpath
+**/WEB-INF/classes
+**/WEB-INF/lib
+logs
+**/WebRoot/basedata/area.json_*
+document/~*
+document/Icon
+/config/local/jdbc.properties
+*.log
+**/build/
+unknown/
+rebel-remote.xml
+rebel.xml
+rebel-remote.xml.bak
+rebel.xml.bak

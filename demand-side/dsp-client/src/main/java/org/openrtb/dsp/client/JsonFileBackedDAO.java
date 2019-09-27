@@ -144,20 +144,22 @@ public class JsonFileBackedDAO implements DemandSideDAO {
 	}
 	
 	// the get method of ConcurrentMap is not blocking, hence make this synchronized
-	
+	@Override
 	public synchronized long getServerPort() {
 		return properties.get("server_port");
 	}
 
-	
+	@Override
 	public ConcurrentMap<String, RTBExchange> getExchanges() {
 		return exchanges;
 	}
 
+	@Override
 	public ConcurrentMap<String, RTBAdvertiser> getAdvertisers() {
 		return advertisers;
 	}
 
+	@Override
 	public synchronized void loadData(String dbLocation) throws DSPException {
 		try {			
 			if ((dbLocation != null) && (dbLocation != "")) {
@@ -184,7 +186,8 @@ public class JsonFileBackedDAO implements DemandSideDAO {
 			throw new DSPException(e.getMessage());
 		}
 	}
-	
+
+	@Override
 	public synchronized long getDefaultTimeout(String string) {
 		return properties.get(string);
 	}	

@@ -3,7 +3,7 @@
   
   <name>Supply Side Service Project</name>
   
-  <groupId>org.openrtb</groupId>
+  <groupId>org.openrtb.ssp</groupId>
   <artifactId>ssp</artifactId>
   <packaging>pom</packaging>
 

@@ -98,7 +98,7 @@ public class AbstractJsonTranslatorTest {
     public void verifyPrettyPrinter() throws IOException {
         test.usePrettyPrinter();
         //assertEquals("pretty printer didn't return the expected results",
-                     //PRETTY_VALUE, test.toJSON(PARENT));
+                  //   PRETTY_VALUE, test.toJSON(PARENT));
 
         test.disablePrettyPrint();
         assertEquals("should display default json text again",
@@ -138,7 +138,8 @@ public class AbstractJsonTranslatorTest {
          * {@link Inclusion#NON_DEFAULT} specification on the
          * {@link JsonSerialize} annotation.
          */
-        private ParentType() { }
+        @SuppressWarnings("unused")
+		private ParentType() { }
 
         @JsonCreator
         public ParentType(@JsonProperty("object") SubType first,
@@ -176,7 +177,8 @@ public class AbstractJsonTranslatorTest {
          * The default constructor is needed when the JsonCreator annotation is
          * not used.
          */
-        public SubType() { }
+        @SuppressWarnings("unused")
+		public SubType() { }
 
         public SubType(String myValue) {
             this.myValue = myValue;
@@ -185,7 +187,8 @@ public class AbstractJsonTranslatorTest {
         public String getValue() {
             return myValue;
         }
-        public void setValue(String value) {
+        @SuppressWarnings("unused")
+		public void setValue(String value) {
             myValue = value;
         }
     }

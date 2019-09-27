@@ -30,16 +30,16 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 package org.openrtb.dsp.core;
+import org.apache.avro.AvroRemoteException;
 
 /**
  * Exception class to wrap all exceptions from
  * {@link AdvertiserBlocklistRequester} with functional root cause message and
  * associated initiating exception.
  */
-public class BlocklistException extends Exception {
+public class BlocklistException extends AvroRemoteException {
 
     private static final long serialVersionUID = -2839199317706244721L;
-
     BlocklistException() {
         super();
     }
@@ -49,6 +49,6 @@ public class BlocklistException extends Exception {
     }
 
     BlocklistException(String message, Throwable cause) {
-        super(message, cause);
+    	super(message);
     }
 }
